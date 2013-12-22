@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ls.stonemp3"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="ls.stonemp3.MainActivity"
+            android:label="@string/app_name" 
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ls.stonemp3.MP3List"></activity>
+        <activity android:name="ls.start.Start_One"></activity>
+        <activity android:name="ls.start.Start_Two"></activity>
+         <activity android:name="ls.stonemp3.PlayerActivity"></activity>
+        <activity android:name="ls.stonemp3.LocalMp3ListActivity"
+            android:launchMode="singleTask"></activity>
+         <service android:name="ls.service.PlayService"></service>
+        <service android:name="ls.service.DownloadService"></service>
+        <receiver android:name="ls.appwidget.APPWidget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_provider" />
+        </receiver>
+
+       
+    </application>
+
+</manifest>

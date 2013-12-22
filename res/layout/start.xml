@@ -1,0 +1,22 @@
+<RelativeLayout
+    android:layout_width="fill_parent"
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="fill_parent">
+  <ImageView 
+      android:background="@drawable/back"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      />
+  <TextView 
+      android:layout_centerInParent="true"
+     android:layout_width="250dip"
+      android:layout_height="wrap_content"
+      android:text="欢迎来到stone的世界。这是一个MP3播放器。可以从网上下载歌曲哦！！！！请点击MENU更新下载列表"/>
+  <Button 
+      android:id="@+id/next"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="下一步"
+      />
+      
+</RelativeLayout>

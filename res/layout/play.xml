@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back" >
+
+    <TextView
+        android:id="@+id/mp3name"
+        android:layout_width="wrap_content"
+        android:layout_height="100dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dip" 
+        android:textSize="25dp"/>
+
+    <ls.lrc.LrcView
+        android:id="@+id/lrcShowView"
+        android:layout_width="match_parent"
+        android:layout_height="300dip"
+        android:layout_above="@+id/footer_layout"
+        android:layout_below="@+id/header_layout"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dip" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginBottom="100dip"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/past"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="40dip" 
+            android:background="@drawable/past"/>
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dip"
+            android:background="@drawable/next" />
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

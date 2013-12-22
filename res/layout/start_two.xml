@@ -1,0 +1,22 @@
+<RelativeLayout
+    android:layout_width="fill_parent"
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="fill_parent">
+  <ImageView 
+      android:background="@drawable/back"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      />
+  <TextView 
+      android:layout_centerInParent="true"
+      android:layout_width="250dip"
+      android:layout_height="wrap_content"
+      android:text="但是！！！！更新是可能会出错的。那是因为我的服务器还没有搭建。如果想要直接播放请把MP3和lrc放入根目录的mp3文件夹下"/>
+  <Button 
+      android:id="@+id/next"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="进入播放器"
+      />
+      
+</RelativeLayout>
